@@ -1,0 +1,14 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 70% 50%, #1a1a1a 0%, #000000 80%);
+  color: white;
+}
+
+/* Responsive changes for mobile */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(to top right, #1a1a1a 0%, #000000 80%);
+  }
+}

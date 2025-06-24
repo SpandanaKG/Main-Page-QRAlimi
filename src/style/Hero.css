@@ -1,0 +1,142 @@
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem 3rem; /* top padding = header height (~6rem) */
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  flex: 1 1 50%;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.hero-right {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.typed-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: yellow;
+  margin-bottom: 0.3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  font-weight: 600;
+}
+
+.hero-description {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  margin-top: 1.8rem;
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.85rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(59,130,246,0.4);
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+.hero-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.blob-yellow {
+  background: #facc15;
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 70%;
+}
+
+.blob-blue {
+  background: #38bdf8;
+  width: 240px;
+  height: 240px;
+  bottom: 5%;
+  right: 5%;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 7rem 1rem 2rem;
+  }
+
+  .hero-left, .hero-right {
+    flex: 1 1 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .typed-heading {
+    font-size: 2.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-btn {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .blob-yellow, .blob-blue {
+    display: none;
+  }
+}
