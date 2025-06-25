@@ -29,8 +29,8 @@ const Hero = () => {
         <p className="hero-description" data-aos="fade-right">
           휴대전화 번호를 노출하지 마십시오. QR코드를 사용하여 신원을 보호하고, 안전한 메시지 전송을 가능하게 하며, 사기를 예방하세요.
         </p>
-        <button href="#cta" className="cta-btn" data-aos="fade-right" onClick={() => {
-          const ctaElement = document.getElementById('cta');
+        <button href="#problem" className="cta-btn" data-aos="fade-right" onClick={() => {
+          const ctaElement = document.getElementById('problem');
             if (ctaElement) {
               ctaElement.scrollIntoView({ behavior: 'smooth' });
             }
